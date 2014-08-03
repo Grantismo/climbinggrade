@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+    "name": "Climbing Grade",
+    "description": "This extension shows climbing grade conversions.",
+    "version": "1.0",
+
+    "icons":{ "128": "climber128.png", 
+      "48": "climber48.png"},
+    "background": {"pages": ["background.html"]},
+
+
+  "author": "Grant Warman",
+    "content_scripts": [{
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["jquery.js", "background.js"],
+      "css": ["drop-theme-basic.css"]
+    }]
+
+}
