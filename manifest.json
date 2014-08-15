@@ -12,8 +12,8 @@
   "author": "Grant Warman",
     "content_scripts": [{
       "matches": ["http://*/*", "https://*/*"],
-      "js": ["jquery.js", "background.js"],
-      "css": ["drop-theme-basic.css"]
+      "js": ["jquery.js", "jquery.qtip.min.js", "background.js"],
+      "css": ["jquery.qtip.min.css", "background.css"]
     }]
 
 }
